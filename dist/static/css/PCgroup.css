@@ -1,0 +1,43 @@
+.group{
+    width: 557px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.g-t{
+    height: auto;
+    padding-bottom: 0;
+}
+.pb {
+    padding: 20px 0 20px 30px;
+}
+.info-box {
+    background: #fafafb;
+    padding-bottom: 80px;
+    width: 100%;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 -5px 5px -5px rgba(94,94,94,0.16);
+    height: 80px;
+    align-items: center;
+    padding: 10px 20px;
+}
+.footimg {
+    height: 60px;
+}
+.footerTxtClick {
+    font-size: 16px;
+    background: #ffe103;
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    outline: none;
+}

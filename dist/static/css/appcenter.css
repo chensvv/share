@@ -1,0 +1,25 @@
+.mint-toast.centerToast{
+    width: 35% !important;
+    padding: 25px 0 !important;
+    border-radius: 5px;
+    background: rgba(81, 81, 81, 0.9);
+    top: 40%;
+}
+.mint-toast.centerToast .mint-toast-text{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+.mint-toast-icon{
+    font-size: 50px !important;
+}
+.el-input__inner{
+    border-radius: 2px !important;
+    border: none !important;
+    padding: 0 0.1rem !important;
+}
+.el-cascader-menu__item{
+    border-bottom: 1px solid #f9f8f894;
+}
+.el-popper{
+    margin-top: 5px !important;
+}

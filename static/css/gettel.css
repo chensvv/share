@@ -1,0 +1,30 @@
+.mint-toast.mytotal {
+    width: 80% !important;
+    padding: 15px 75px !important;
+    background: rgba(81, 81, 81, 0.8);
+    top: 36%;
+}
+@media screen and (max-width: 376px) and (min-width: 374px){
+    .mint-toast.mytotal {
+        width: 80% !important;
+        padding: 15px 60px !important;
+        background: rgba(81, 81, 81, 0.8);
+        top: 39%;
+    }
+}
+@media screen and (max-width: 321px) and (min-width: 319px){
+    .mint-toast.mytotal {
+        width: 80% !important;
+        padding: 15px 40px !important;
+        background: rgba(81, 81, 81, 0.8);
+        top: 45%;
+    }
+}
+@media screen and (max-width: 361px) and (min-width: 359px){
+    .mint-toast.mytotal {
+        width: 80% !important;
+        padding: 15px 50px !important;
+        background: rgba(81, 81, 81, 0.8);
+        top: 40%;
+    }
+}

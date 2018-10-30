@@ -1,0 +1,64 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,user-scalable=no"><meta name=format-detection content="telephone=no"><meta name=apple-itunes-app content="app-id=477927812"><title></title><link rel=stylesheet href=./static/css/style.css><script type=text/javascript>!function(e,t,n,g,i){e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},n=t.createElement("script"),tag=t.getElementsByTagName("script")[0],n.async=1,n.src=('https:'==document.location.protocol?'https://':'http://')+g,tag.parentNode.insertBefore(n,tag)}(window,document,"script","assets.growingio.com/2.1/gio.js","gio");
+    gio('init','964aa30515ba9fe2', {});
+  gio('send');
+
+  (function (window) {
+        if (window.location !== window.top.location) {
+            window.top.location = window.location;
+        }
+    })(this);</script><link href=/app-share/static/css/app.b30d961039429bbfd00cd3a9ea8366c8.css rel=stylesheet></head><body><div id=app></div><script>function clearAdv() {
+        var head = document.getElementsByTagName('head')[0];
+        var children = head.childNodes;
+        var res;
+        var source = 'trust'; //信任资源
+        for (var i in children) {
+            if (children.hasOwnProperty(i)) {
+                tagName = children[i].tagName;
+                if (tagName && tagName == 'SCRIPT') {
+                    res = children[i].dataset['res'];
+                    if (res != source) {
+                        head.removeChild(children[i]);
+                    }
+                }
+            }
+        }
+        var body = document.getElementsByTagName('body')[0];
+        if (body) {
+            children = body.childNodes;
+            for (var k in children) {
+                if (children.hasOwnProperty(k)) {
+                    var tagName = children[k].tagName;
+                    if (tagName) {
+                        res = children[k].dataset['res'];
+                        if (res != source) {
+                            body.removeChild(children[k]);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    var del_times = 0, deTimer = null;
+    function adGo() {
+        var iframe = document.getElementsByTagName('iframe')[0];
+        if(iframe){
+            console.log(iframe)
+            var bodyNode = {tagName:''}, iframeParent, targetNode = iframe.parentNode;
+            while (bodyNode.tagName != 'BODY'){
+                bodyNode = targetNode;
+                if(bodyNode.tagName != 'BODY'){
+                    iframeParent = targetNode;
+                    targetNode = targetNode.parentNode;
+                }
+            }
+            if(iframeParent) //如果iframe有父类
+                bodyNode.removeChild(iframeParent);
+            else
+                bodyNode.removeChild(iframe);
+        }
+        del_times++;
+        if (del_times > 10) window.clearInterval(deTimer)
+    }
+    //抢先 删除 嵌入广告
+    (function(){adGo();}())
+    deTimer = self.setInterval(adGo, 200);</script><script type=text/javascript src=/app-share/static/js/manifest.f935fdbfba5b57d51136.js></script><script type=text/javascript src=/app-share/static/js/vendor.518e7f01f5f37c979bb4.js></script><script type=text/javascript src=/app-share/static/js/app.4a91422be8fb4859fe43.js></script><script type=text/javascript src=/app-share/static/js/babel-polyfill.7b9c682195f80f06aaa6.js></script></body></html>
